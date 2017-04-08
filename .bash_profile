@@ -74,11 +74,8 @@ export EDITOR="vim"
 
 # Useful aliases
 
-alias e="sublime"
 alias be="bundle exec"
 alias subl="sublime"
-alias s="spring"
-alias src="spring rails console"
 alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
@@ -86,9 +83,9 @@ alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
 # use cellar version of postgres
 #$PATH=/usr/local/Cellar/postgresql/9.2.1/bin:$PATH
 # use project node modules
-export PATH="/Users/ArielFogel/Work/Bloc/node_modules/.bin:$PATH"
+# export PATH="/Users/ArielFogel/Work/Bloc/node_modules/.bin:$PATH"
 
 # add arc to PATH
-export PATH="/Users/ArielFogel/arcanist/bin:$PATH"
+# export PATH="/Users/ArielFogel/arcanist/bin:$PATH"
 # DEPLOY TOKEN GAHLSDKJFLSKDJF
-export SLACKBOT_TOKEN=YQrHjs2RJVpC4Y4HQ2UbKvng
+# export SLACKBOT_TOKEN=YQrHjs2RJVpC4Y4HQ2UbKvng
