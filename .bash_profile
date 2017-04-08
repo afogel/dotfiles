@@ -70,7 +70,7 @@ alias ls='ls -Gh'
 export GREP_OPTIONS='--color=always'
 
 # Set vim as the default editor
-export EDITOR="vim"
+export EDITOR="emacs"
 
 # Useful aliases
 
