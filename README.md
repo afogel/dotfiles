@@ -45,3 +45,6 @@ Note: you may need to alter the path to the psql binary to use the Cellar versio
 # pwd #=> anywhere
 $ echo "$PATH=/usr/local/Cellar/postgresql/9.X.X/bin:$PATH" >> ~/.bash_profile
 ```
+
+### Other fun stuff
+- [https://coderwall.com/p/h6yfda/use-and-to-jump-forwards-backwards-words-in-iterm-2-on-os-x | use forward and backwards jumps in iTerm2]
