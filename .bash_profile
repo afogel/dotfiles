@@ -71,7 +71,7 @@ export GREP_OPTIONS='--color=always'
 
 # Set vim as the default editor
 export EDITOR="emacs"
-
+export GIT_EDITOR="emacs"
 # Useful aliases
 
 alias be="bundle exec"
