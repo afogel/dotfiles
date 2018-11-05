@@ -46,5 +46,20 @@ Note: you may need to alter the path to the psql binary to use the Cellar versio
 $ echo "$PATH=/usr/local/Cellar/postgresql/9.X.X/bin:$PATH" >> ~/.bash_profile
 ```
 
+### Sublime
+
+If installing sublime, create symbolic links so that you can launch from CLI:
+
+Sublime 2:
+```
+ln -sv "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+```
+
+Sublime 3:
+```
+ln -sv "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+```
+
+
 ### Other fun stuff
 - [https://coderwall.com/p/h6yfda/use-and-to-jump-forwards-backwards-words-in-iterm-2-on-os-x | use forward and backwards jumps in iTerm2]
