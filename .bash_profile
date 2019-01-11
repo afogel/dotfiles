@@ -139,6 +139,7 @@ export GIT_EDITOR="emacs"
 
 # Useful aliases
 alias be="bundle exec"
+alias pr="pipenv run"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
