@@ -12,8 +12,36 @@ curl -sSL https://get.rvm.io | bash -s stable
 # install iterm2
 brew cask install iterm2
 
-# install rectangle
+# install Rectangle
 brew cask install rectangle
+
+# install VLC
+brew cask install vlc
+
+# install Anki
+brew cask install anki
+
+# install Authy
+brew cask install authy
+
+# install slack
+brew cask install slack
+# spaces to enter:
+# edurrhaphy.slack.com,
+# uw-learningsciences.slack.com,
+# reply-all.slack.com,
+# gorails.slack.com,
+# driftingruby.slack.com,
+# tebs-lab.slack.com
+
+# install vscode
+brew cask install visual-studio-code
+
+# install tor
+brew cask install tor-browser
+
+# install qbittorrent
+brew cask install qbittorrent
 
 # --------------------------
 # INSTALL NECESSARY SOFTWARE
@@ -36,4 +64,3 @@ brew install nushell
 # install postgres
 brew install postgresql
 brew services start postgresql
-
