@@ -1,7 +1,38 @@
 #!/bin/bash
 
+/bin/bash -c "defaults write NSGlobalDomain KeyRepeat -int 0"
+
 # install homebrew
-curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+
+# --------------------------
+# INSTALL NECESSARY SOFTWARE
+# --------------------------
+
+# install nushell
+brew install nushell
+
+# install postgres
+brew install postgresql
+brew services start postgresql
+
+# install git
+brew install git
+
+# clone dotfiles
+git clone https://github.com/afogel/dotfiles.git
+# copy git aliases
+cp ./dotfiles/.gitconfig ~/.gitconfig
+
+brew install bash-completion
+
+# install starship prompt
+brew install starship
+echo "eval "$(starship init bash)"" >> ~/.bashrc
+
+# install starship prompt
+brew install icdiff
 
 # install rvm
 curl -sSL https://get.rvm.io | bash -s stable
@@ -43,24 +74,12 @@ brew cask install tor-browser
 # install qbittorrent
 brew cask install qbittorrent
 
-# --------------------------
-# INSTALL NECESSARY SOFTWARE
-# --------------------------
+# install rstudio
+brew cask install r
+brew cask install rstudio
 
-# copy git aliases
-cp .gitconfig ~/.gitconfig
-cp .bash_profile ~/.bash_profile
+# install dashlane
+brew cask install dashlane
 
-# install git
-brew install git
-
-# install starship prompt
-brew install starship
-echo "eval "$(starship init bash)"" >> ~/.bashrc
-
-# install nushell
-brew install nushell
-
-# install postgres
-brew install postgresql
-brew services start postgresql
+# Generate ssh keys
+ssh-keygen -t rsa -b 4096 -C "fogeltine@gmail.com"
