@@ -1,17 +1,3 @@
-[core]
-  # Excludesfiles allows us to set a global list of things to ignore
-  excludesfile = ~/.gitignore_global
-
-# These are custom color options for the console
-[color]
-  status = auto
-  diff = auto
-
-[color "status"]
-  untracked = cyan
-  changed = green
-  added = yellow
-
 # Aliases are command shortcuts
 [alias]
   co = checkout
@@ -43,8 +29,28 @@
 
 	# stash all tracked and untracked files
 	staash = stash --all
+
+
+[core]
+  # Excludesfiles allows us to set a global list of things to ignore
+  excludesfile = ~/.gitignore_global
+
+# These are custom color options for the console
+[color]
+  status = auto
+  diff = auto
+
+[color "status"]
+  untracked = cyan
+  changed = green
+  added = yellow
+
+[column]
+	ui = auto
+
+[rerere]
+	enabled = true
+
 [user]
 	name = Ariel Fogel
 	email = fogeltine@gmail.com
-[rerere]
-	enabled = true
