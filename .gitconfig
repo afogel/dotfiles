@@ -40,6 +40,11 @@
 
   # Edit the last commit
   amend= commit --verbose --amend
+
+	# stash all tracked and untracked files
+	staash = stash --all
 [user]
 	name = Ariel Fogel
 	email = fogeltine@gmail.com
+[rerere]
+	enabled = true
